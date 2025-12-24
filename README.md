@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fish_shell_logo_ascii.svg/1200px-Fish_shell_logo_ascii.svg.png" width="120" />
-  <img src="https://avatars.githubusercontent.com/u/110034426?s=200&v=4" width="120" />
   <br/>
   <b><i>Bring your workspaces to life.</i></b>
   <br/>
@@ -15,8 +14,7 @@
 
 ---
 
-## ⚡ What is this?
-A lightweight, **native Fish shell** daemon that plays a specific video wallpaper for each workspace. It uses \`mpvpaper\` with specific flags to ensure your GPU doesn't crash.
+## ⚡ Features
 
 | Feature | Description |
 | :--- | :--- |
@@ -44,15 +42,9 @@ Drop your \`.mp4\` files into the config folder.
 **Naming Convention:**
 * Workspace 1 → \`1.mp4\`
 * Workspace 2 → \`2.mp4\`
-* Workspace 3 → \`3.mp4\`
 
 ### 3. Restart Hyprland
-Logout and log back in to see the magic.
-
----
-
-## 📸 Demo
-*(Upload a GIF of your desktop here to show off the transition!)*
+Logout and log back in.
 
 ---
 <div align="center">
