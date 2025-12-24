@@ -1,27 +1,38 @@
-# Hyprland Video Wallpaper (Fish Edition) 🐟
+# 🎥 Hyprland Video Wallpaper
 
-A lightweight, native Fish shell solution for 'smart' video wallpapers on Hyprland.
+![Shell Script](https://img.shields.io/badge/Language-Fish_Shell-blue?style=for-the-badge&logo=gnu-bash)
+![Hyprland](https://img.shields.io/badge/WM-Hyprland-important?style=for-the-badge&logo=arch-linux)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## Features
-- ⚡ **Native Fish Script:** No bash dependency.
-- 🎥 **Per-Workspace Videos:** Automatically plays 1.mp4 on workspace 1, etc.
-- 🛠 **AMD/Nvidia Crash Fix:** Uses 'Safe Mode' (CPU decoding) to prevent crashes.
+> **Ditch the static images.** Bring your workspaces to life with performance-optimized video wallpapers that switch automatically as you navigate.
 
-## Installation
+## ⚡ Why this rocks
+* **🚀 Zero Lag:** Uses \`mpvpaper\` with hardware-safe flags (\`hwdec=no\`) so your GPU doesn't melt or crash \`libcuda\`.
+* **🐟 Pure Fish:** Written entirely in native Fish shell. No Bash wrappers.
+* **🧠 Smart Switching:** Detects workspace changes instantly via socket listening.
+* **🧹 Auto-Cleanup:** Automatically nukes conflicting wallpaper scripts (like those found in End-4 dotfiles).
 
-1. **Clone the repository:**
-   git clone https://github.com/shawaal-omnom29/hyprland-video-wallpaper.git
-   cd hyprland-video-wallpaper
+---
 
-2. **Run the installer:**
-   chmod +x install.fish
-   ./install.fish
+## 🛠️ Installation
 
-3. **Add your videos:**
-   - Put video files in ~/.config/hypr/wallpapers/
-   - Name them 1.mp4, 2.mp4, etc.
+### 1. Clone & Install
+\`\`\`fish
+git clone https://github.com/shawaal-omnom29/hyprland-video-wallpaper.git
+cd hyprland-video-wallpaper
+chmod +x install.fish
+./install.fish
+\`\`\`
 
-4. **Restart Hyprland.**
+### 2. Add your Videos
+Drop your \`.mp4\` files into \`~/.config/hypr/wallpapers/\`.
+**Naming matters:**
+* Workspace 1 -> \`1.mp4\`
+* Workspace 2 -> \`2.mp4\`
+* ...and so on.
 
-## License
-MIT
+### 3. Restart & Enjoy
+Logout of Hyprland and log back in. Your desktop is now alive.
+
+---
+*Created by [Shawaal](https://github.com/shawaal-omnom29)*
