@@ -1,16 +1,29 @@
 # 🎥 Hyprland Video Wallpaper
 
-![Shell Script](https://img.shields.io/badge/Language-Fish_Shell-blue?style=for-the-badge&logo=gnu-bash)
-![Hyprland](https://img.shields.io/badge/WM-Hyprland-important?style=for-the-badge&logo=arch-linux)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Fish_shell_logo_ascii.svg/1200px-Fish_shell_logo_ascii.svg.png" width="120" />
+  <img src="https://avatars.githubusercontent.com/u/110034426?s=200&v=4" width="120" />
+  <br/>
+  <b><i>Bring your workspaces to life.</i></b>
+  <br/>
+  <br/>
 
-> **Ditch the static images.** Bring your workspaces to life with performance-optimized video wallpapers that switch automatically as you navigate.
+  ![Language](https://img.shields.io/badge/Language-Fish_Shell-blue?style=for-the-badge&logo=gnu-bash)
+  ![WM](https://img.shields.io/badge/WM-Hyprland-important?style=for-the-badge&logo=arch-linux)
+  ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+</div>
 
-## ⚡ Why this rocks
-* **🚀 Zero Lag:** Uses \`mpvpaper\` with hardware-safe flags (\`hwdec=no\`) so your GPU doesn't melt or crash \`libcuda\`.
-* **🐟 Pure Fish:** Written entirely in native Fish shell. No Bash wrappers.
-* **🧠 Smart Switching:** Detects workspace changes instantly via socket listening.
-* **🧹 Auto-Cleanup:** Automatically nukes conflicting wallpaper scripts (like those found in End-4 dotfiles).
+---
+
+## ⚡ What is this?
+A lightweight, **native Fish shell** daemon that plays a specific video wallpaper for each workspace. It uses \`mpvpaper\` with specific flags to ensure your GPU doesn't crash.
+
+| Feature | Description |
+| :--- | :--- |
+| **🚀 Zero Lag** | Uses \`hwdec=no\` to prevent \`libcuda\` crashes on AMD/Nvidia. |
+| **🐟 Pure Fish** | Written entirely in Fish. No Bash dependencies. |
+| **🧹 Auto-Clean** | Automatically disables conflicting scripts (End-4 dotfiles). |
+| **🧠 Smart** | Listens to socket events for instant switching. |
 
 ---
 
@@ -25,14 +38,23 @@ chmod +x install.fish
 \`\`\`
 
 ### 2. Add your Videos
-Drop your \`.mp4\` files into \`~/.config/hypr/wallpapers/\`.
-**Naming matters:**
-* Workspace 1 -> \`1.mp4\`
-* Workspace 2 -> \`2.mp4\`
-* ...and so on.
+Drop your \`.mp4\` files into the config folder.
+> **Path:** \`~/.config/hypr/wallpapers/\`
 
-### 3. Restart & Enjoy
-Logout of Hyprland and log back in. Your desktop is now alive.
+**Naming Convention:**
+* Workspace 1 → \`1.mp4\`
+* Workspace 2 → \`2.mp4\`
+* Workspace 3 → \`3.mp4\`
+
+### 3. Restart Hyprland
+Logout and log back in to see the magic.
 
 ---
-*Created by [Shawaal](https://github.com/shawaal-omnom29)*
+
+## 📸 Demo
+*(Upload a GIF of your desktop here to show off the transition!)*
+
+---
+<div align="center">
+  <i>Powered by <a href="https://github.com/GhostNaN/mpvpaper">mpvpaper</a></i>
+</div>
